@@ -1,0 +1,193 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+/* Shelby Laquitara, 01/28/2016,style.css */
+/* ==================================================================== */
+/* BOOTSTRAP - Overrule the styles that impace the menu */
+/* ==================================================================== */
+.navbar{
+    width:960px;
+    margin: 0px auto;
+    background-color: #042841;
+    color: #FFF;
+}
+.navbar-default .navbar-nav > li > a { /* Menu text color */
+    color: #FFF;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a::after focus {
+    color: #F809C7                  /* Menu mouseover */
+}
+.navbar-default .navbar-brand {     /* navbar-default formats NAV tag*/
+    color: #FFF;
+    background-color: #042841;                    /* navbar-brand - Home Button */
+}
+.navbar-default, .navbar-form, .navbar-collapse { /* navbar-expand */
+    /* navbar-brand - Home Button */
+    color: #FFF;
+    background-color: #042841;
+    font-family:Papyrus;
+    font-size:14pt;
+    /* background-color: transparent; use this if you want */
+}
+
+/* ======================================================================= */
+/* Formats the DROPDOWN menu */
+/* ======================================================================= */
+.dropdown { /* Used for the 1st LI in the UL - DropDown menu */}
+.dropdown-toggle { /* Used for 1st LI in the UL - DropDown menu */}
+.dropdown-menu  { /* Used for the A in the LI - DropDown menu */}
+
+.dropdown-menu li a {   
+    color: #2362D9;         /* Green submenu */ 
+}
+.dropdown-menu li a:hover {
+    color: #F809C7;         /* Pink mouseover submenu */
+}
+.dropdown-toggle span {
+    color: #FFF;            /* caret */
+}
+
+/* =============================================== */
+/* DEFAULT STYLES - about.css */
+/* =============================================== */
+body {
+	margin: 0px auto;  /* centers the page content */ 
+	background-color:#000000; 				 
+	color:#000;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size:12pt;  
+}   
+/* HEADER SECTION */
+header {
+	width:960px;
+	height:100px;  
+	margin: 0px auto;  
+	padding: 0px;
+	z-index: 100;  
+	background-image:url(../images/banner.jpg);
+	background-color:#042841;  
+	background-size:960px 100px;
+	background-repeat:no-repeat;  
+} 
+.logo {
+	width:180px;
+	height:100px; 
+	float:left;
+}
+.topMenu {
+	padding-right: 80px; 
+	padding-top: 10px;
+	
+	color:#042841;
+	text-align:right;
+	font-size: 9pt; 
+	font-family:Verdana, Geneva, sans-serif; 
+}
+.topMenu a, a:visited {
+	text-decoration:none;
+	color:#141919;
+}
+.topMenu a:hover {
+	color:#cd2c31;
+}
+header h1 {
+	text-align:center;
+	padding-right: 0px;  
+	
+	color:#FFF;
+	font-family:Papyrus;
+	text-outline:1px 0px #d8e6b3; /* CSS 3 style */ 
+	text-shadow: 4px -2px 4px #000000;
+}  
+/* MIDDLE PAGE ROW */
+.main {
+	width:960px; 
+	padding: 0px 0px;
+	margin: 0px auto;  
+	
+	background-color: #FFF; 
+}  
+/* MAIN CONTENT SECTION  - RIGHT*/
+.content { 
+	width:780px;  
+	padding: 0px 10px;
+	display:table-cell; 
+	vertical-align:top; 
+} 
+.content h2 {
+	color:#042841;
+} 
+.content a, a:visited {
+	text-decoration:none;
+	color:#141919;
+}
+.content a:hover {
+	color:#A69055;
+}  
+  
+/* MENU SECTION - Bullet List LEFT */
+aside {   /* the whole list */
+	width:180px;  
+	margin: 0px auto; 
+	vertical-align:top;
+	padding: 0px 0px;
+	display:table-cell; 
+	margin-bottom: 15px;   
+	} 
+aside p {  
+	padding: 0px 0px; 
+	text-align:center;  
+}    
+/* FOOTER CONTENT SECTION */
+footer {
+	width:960px; 
+	padding: 10px 0px;
+	margin: 0px auto;  
+	clear: both;   
+	
+	background-color:#042841;  
+	text-align:center;
+	color: #d8e6b3;
+}
+div {background-color: #fff;}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+#submit{margin-left: 190px;}  
+
+/* GENERIC CLASSES */ 
+.fltrt {  
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {  
+	float: left;
+	margin-right: 8px;
+}
+.borderon {
+	border-width:5px; 
+	border-color:#000000;
+}   
+.brClear{
+	clear:both;	
+}
+
+.table {display: table;}
+
+.row {display: table-row;}
+
+.cell {display: table-cell; border: thin solid #f3f3f3; width: 320px; height: 252px;}
+
+.div1 {width:320px;height:252px;border:1px solid #aaaaaa;}
+
+
+ 

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/html" href="xml.html"?>
+<rss> version="2.0">
+
+  <library>
+    <resource>
+      <title>Christian womanhood</title>
+      <author>William Wallace</author>
+      <synopsis>Religious book about the life of Mrs. M. K. Everts</synopsis>
+      <type>book</type>
+      <link>https://lccn.loc.gov/36019856</link>
+      <year>1868</year>
+    </resource>
+    <resource>
+      <title>Woman suffrage in New Jersey</title>
+      <author>Lucy Stone</author>
+      <synopsis>An address delivered by Lucy Stone,
+      at a hearing before the New Jersey Legislature</synopsis>
+      <type>book</type>
+      <link>https://lccn.loc.gov/09032760</link>
+      <year>1867</year>
+    </resource>
+    <resource>
+      <title>Developing an airport performance-measurement system</title>
+      <author>Washington, D.C. : Transportation Research Board</author>
+      <synopsis>	Developing an airport performance-measurement system /
+      Infrastructure Management Group, Inc., </synopsis>
+      <type>book</type>
+      <link>https://lccn.loc.gov/2010928847</link>
+      <year>2010</year>
+    </resource>
+    <resource>
+      <title>The Fleet : its river, prison and marriages </title>
+      <author>Ashton, John</author>
+      <synopsis></synopsis>
+      <type>book</type>
+      <link>https://lccn.loc.gov/15019012</link>
+      <year>1888</year>
+    </resource>
+    <resource>
+      <title>The journal of the Federal convention of 1787 analyzed</title>
+      <author>Richardson, Hamilton P.</author>
+      <synopsis>The journal of the Federal convention of 1787 analyzed</synopsis>
+      <type>book</type>
+      <link>https://lccn.loc.gov/99005457</link>
+      <year>1899</year>
+    </resource> 
+</library>
+</rss>
+
+
+
+
+
+

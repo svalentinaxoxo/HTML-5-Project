@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- Created by: Shelby Laquitara , skeleton.html -->
+<!-- Last Modified: 1/26/2016 -->
+<head>
+    <title>Prints and Photographs</title>
+    <meta charset="utf-8" />
+    <meta name="keywords"
+          content="Library of Congress, Shelby Laquitara" />
+    <meta name="description" content="My Sample Web Page" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        var canvas;//variable used for canvas
+        var ctx; //variable used for context 
+        //function to changeImage
+        function changeImage(img) {
+            img.src = img.src.replace("images/LOChyperlink.jpg", "images/LOChyperlink2.jpg");
+        }
+        //replace the image
+        function bringImage(img) {
+            img.src = img.src.replace("images/LOChyperlink2.jpg", "images/LOChyperlink.jpg");
+        }
+        function drawBuilding() {
+            canvas = document.getElementById("myCanvas");
+            ctx = canvas.getContext("2d");
+
+            ctx.beginPath(); //begin
+            ctx.moveTo(100, 250); //starting point
+            ctx.lineTo(425, 50); //ending point
+            ctx.lineTo(700, 100);
+            ctx.lineTo(700, 400);
+            ctx.lineTo(100, 400);
+            ctx.closePath();
+            ctx.stroke(); //draws the line
+
+            //fill inside canvas white as building color
+            ctx.fillStyle = "white";
+            ctx.fill();
+            
+            //add text
+            ctx.font = "20px Arial";
+            ctx.fillStyle = "black";
+            ctx.fillText("John Adams Building", 450, 120);
+            
+            //draw line down the middle of building
+            ctx.moveTo(425, 50);
+            ctx.lineTo(425, 400);
+            ctx.stroke();
+
+            //rectangle
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(150, 250, 20, 30); //size and shape of rectangle
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(250, 250, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(350, 250, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(450, 250, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(550, 250, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(650, 250, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(250, 200, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(350, 200, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(450, 200, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(550, 200, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(650, 200, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(350, 150, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(450, 150, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(550, 150, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(650, 150, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(150, 300, 20, 30); //(x, y, width, height)
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(250, 300, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(350, 300, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(450, 300, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(550, 300, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(650, 300, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(150, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(250, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(350, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(450, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(550, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(300, 200, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(400, 200, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(500, 200, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(600, 200, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(500, 300, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(600, 300, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(400, 300, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(300, 300, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(200, 300, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(200, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(300, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(400, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(500, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(600, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(650, 350, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(200, 250, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(300, 250, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(400, 250, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(500, 250, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(600, 250, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(200, 200, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(300, 150, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(400, 150, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(500, 150, 20, 30);
+
+            ctx.lineWidth = 5; //width of the line of border
+            ctx.strokeStyle = "black"; //color of border default is black
+            ctx.strokeRect(600, 150, 20, 30);
+
+            //set background color
+            document.getElementById("myCanvas").style.backgroundColor
+                = 'rgba(158, 167, 184, 0.2)';
+        }
+    </script>
+</head>
+<body onload="drawBuilding();"> <!--drawCanvas is a function-->
+    <!-- insert header here -->
+    <header>
+        <!-- insert Top Menu here -->
+        <img class="logo" src="images/logo.png" alt="Logo" />
+        <nav class="topMenu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <h1>Library of Congress &amp; Other Government Resources</h1>
+    </header>
+
+    <!-- insert Horizontal Menu here -->
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand & toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                        data-toggle="collapse" data-target="#defaultNavbar1"><br />
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="home.html">Home</a>
+            </div>
+
+            <!-- The nav links, forms, & other content for toggling -->
+            <div class="collapse navbar-collapse" id="defaultNavbar1">
+
+                <!-- First Drop Down -->
+                <ul class="nav navbar-nav">
+
+                    <!-- Old code <li class="active"><br>
+                        <a href="about.html"><br>About<span
+                        class="sr-only"> (current) </span></a></li> -->
+
+                    <li class="dropdown"><a href="about.html" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button"
+                           aria-expanded="false">About <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="location.html">Location</a></li>
+                            <li><a href="http://www.loc.gov/" target="_blank">
+                                    Library of Congress</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Second Drop Down -->
+                    <li class="dropdown"><a href="#" class="dropdown-toggle"
+                            data-toggle="dropdown" role="button" aria-expanded="false">
+                            Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="multimedia.html">Performing Arts</a></li>
+                            <li><a href="puzzle.html">Veteran's History Project</a></li>
+                            <li><a href="private.html">Members Only</a></li>
+                            <!-- Line Dividers -->
+                            <li class="divider"></li>
+                            <li><a href="page1.html">Legislative Information</a></li>
+                            <li><a href="page2.html">History &amp; Culture</a></li>
+                            <li><a href="canvas.html">Prints and Photographs</a></li>
+                            <li><a href="animated.html">Historic Newspaper</a></li>
+                            <li class="divider"></li>
+                            <li><a href="xml.html">Other</a></li> Resources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Right Menu -->
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- OLD <li><a href="http://www.google.com/">Google</a></li> -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button" aria-expanded="false">
+                            LOC <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="http://www.loc.gov/photos/collections/">Prints and Photographs</a></li>
+                        </ul>
+                            <!-- Third Drop Down -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-expanded="false">Learn More<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="https://www.archive.org/details/library_of_congress">Archive.org</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="https://www.en.wikipedia.org/wiki/Library_of_Congress">Wikipedia LOC </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                <!-- Search Tools -->
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Search!</button>
+                </form>
+
+            </div> <!-- end navbar-collapse-->
+        </div> <!-- end container-fluid -->
+    </nav>
+
+    <!-- End Main Menu -->
+    <!-- insert left side here -->
+    <div class="main">
+        <aside class="LeftAside">
+            <!-- insert side content here -->
+            <p><a href="http://www.loc.gov/webarchiving/">
+                  <img src="images/image.jpg" alt="Sample Image" width="157" height="117"
+                  style="border-color:#0696AB; border-image-width:10px;"/></a></p>
+        </aside>
+
+        <!-- insert main content here -->
+        <section class="content">
+            <h2>Prints and Photographs</h2>
+            <p>Here are some picture from my favorite books in the Library of Congress 
+            website. When you mouse over the image, my other favorite book
+            pops out of the page! How cool! I have drawn a picture of the Adams building
+            from the Library of Congress website. Below is also a link to the photo
+            collections page. </p>
+            <a href="http://www.loc.gov/photos/collections/">
+                Click here to visit the photo collections from the Library of Congress.
+            </a>
+            <br /><br />
+            <!-- changing the images -->
+            <img id="image" src="images/LOChyperlink.jpg" alt="white cat book"  
+                 onmouseover="changeImage(this);" 
+                 onmouseout="bringImage(this);"/>
+            <img src="images/featured-kellar.jpg" alt="pic from library" 
+                 width="250" height="200"/>
+            <img src="images/copland-piano.jpg" alt="second pic from library" 
+                 width="250" height="200" />
+            <br /><br /><br />
+        </section>
+        <br class="brClear" />
+        <!--creating the canvas and giving it an id-->
+        <canvas id="myCanvas" width="800" height="400";></canvas>
+            <br /><br /><br />
+    </div>
+
+    <!-- insert footer here -->
+    <footer>
+        Created by Shelby Laquitara
+    </footer>
+
+    <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>
+
+
