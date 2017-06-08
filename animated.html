@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- Created by: Shelby Laquitara , animated.html -->
+<!-- Last Modified: 2/21/2016 -->
+<head>
+    <title>Historic Newspapers</title>
+    <meta charset="utf-8" />
+    <meta name="keywords"
+          content="Library of Congress, John Smith" />
+    <meta name="description" content="My Sample Web Page" />
+    <link rel="stylesheet" type="text/css" href="styles/template.css">
+    <link rel="stylesheet" type="text/css" href="styles/templateLayout.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <style type="text/css">
+        /* Put your CSS styles on the line below this comment */
+    </style>
+    <script>      
+
+        function drawStudent() { //function to draw the student
+            //creating variable canvas and assigning it to the ID myCanvas
+            var canvas = document.getElementById("myCanvas");
+            //creating variable for context and assigning it to 2d
+            var ctx = canvas.getContext("2d");
+
+            ctx.moveTo(100, 100 - 75);
+            ctx.beginPath();//begin
+            ctx.arc(100, 100 - 75, 20, 0, 2 * Math.PI, true);//circle
+            ctx.moveTo(100, 45);//moving to..
+            ctx.lineTo(100, 120);//connecting a line to..
+            ctx.lineTo(60, 160);
+            ctx.moveTo(100, 120);
+            ctx.lineTo(140, 160);
+            ctx.moveTo(60, 90);
+            ctx.lineTo(100, 70);
+            ctx.lineTo(140, 90);
+            ctx.stroke();
+        }
+
+        function walk() { //created function to make student walk 
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+
+            ctx.save();
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.restore();
+            ctx.translate(20, 0);
+            drawStudent();
+        }
+
+        function makeWalk() {
+            var i = 100;
+
+            for (var j = 0; j < 30; j++) { //for loop to repeat the steps he takes 
+                setTimeout(walk, i);
+                i += 100;
+            }
+        }
+    </script>
+</head>
+<body onload="makeWalk();">
+    <!-- insert header here -->
+    <header>
+        <!-- insert Top Menu here -->
+        <img class="logo" src="images/logo.png" alt="Logo" />
+        <nav class="topMenu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <h1>Library of Congress &amp; Other Government Resources</h1>
+    </header>
+    <div class="main">
+        <aside class="LeftAside">
+            <nav class="leftMenu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="feedback.html">Feedback Form</a></li>
+                    <li><a href="location.html">Location &amp; Google Map</a></li>
+                    <li><a href="multimedia.html">Performing Arts</a></li>
+                    <li><a href="puzzle.html">Veteran's History Project</a></li>
+                    <li><a href="private.html">Members Only</a></li>
+                    <li><a href="canvas.html">Prints and Photographs</a></li>
+                    <li><a href="animated.html">Historic Newspapers</a></li>
+                    <li><a href="page1.html">Legislative Information</a></li>
+                    <li><a href="page2.html">History &amp; Culture</a></li>
+                    <li><a href="xml.html">Other Resources</a></li>
+                    <li><a href="http://www.google.com">Google</a></li>
+                    <li><a href="http://www.amazon.com">Amazon</a></li>
+                </ul>
+            </nav>
+            <!-- insert side content below the menu here -->
+            <p>
+                <a href="http://wwww.loc.gov/webarchiving/">
+                    <img src="images/image.jpg" alt="Sample Image" width="157" height="117"
+                         style="border-color:#0696AB; border-image-width:10px;" />
+                </a>
+            </p>
+        </aside>
+        <!-- insert main content here -->
+        <section class="content">
+            <h2>Historic Newspapers</h2>
+            <p>Here are some pictures of some historic newspapers from the Library 
+            of Congress. The John Adams building is a historic peice of history and 
+            is drawn in the Prints and Photographs section of my website. Below is also
+            a link for you to visit the Library of Congress newspapers collections. 
+            Thanks for visiting this page! </p>
+            <a href="http://www.loc.gov/newspapers/collections/">
+                Click here to visit the newspapers collections from the Library of Congress.
+            </a>
+            <br /><br />
+            <img src="images/historicnewspaper.jpg" alt="pic from library"
+                 width="350" height="250" />
+            <img src="images/download.png" alt="second pic from library"
+                 width="350" height="250" />
+            <img src="images/adamsBuilding.jpg" alt="second pic from library"
+                 width="350" height="250" />
+            <br /><br />
+            <br class="brClear" />
+            <!--creating the canvas in html-->
+            <canvas id="myCanvas" width="750" height="200"></canvas>
+        </section>
+    </div>
+    
+    <footer>
+        Created by Shelby Laquitara
+    </footer>
+</body>
+</html>

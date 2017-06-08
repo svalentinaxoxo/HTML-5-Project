@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- Created by: Shelby Laquitara , skeleton.html -->
+<!-- Last Modified: 1/20/2016 -->
+<head>
+    <title>John Smith: Library of Congress</title>
+	<meta charset="utf-8" />
+    <meta name="keywords"
+        content="Library of Congress, John Smith" />
+    <meta name="description" content="My Sample Web Page" />
+    <link rel="stylesheet" type="text/css" href="styles/template.css">
+    <link rel="stylesheet" type="text/css" href="styles/templateLayout.css">
+    <script src="js/feedback.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <style type="text/css">
+        /* Put your CSS styles on the line below this comment */
+        
+    </style>
+    <script>
+        // Put your JavaScript code on the line below this comment
+    </script>
+</head>
+<body>
+<!-- insert header here -->
+    <header>
+        <!-- insert Top Menu here -->
+        <img class="logo" src="images/logo.png" alt="Logo" />
+        <nav class="topMenu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <h1>Library of Congress &amp; Other Government Resources</h1>
+    </header>
+    <div class="main">
+        <aside class="LeftAside">
+            <nav class="leftMenu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="feedback.html">Feedback Form</a></li>
+                    <li><a href="location.html">Location &amp; Google Map</a></li>
+                    <li><a href="multimedia.html">Performing Arts</a></li>
+                    <li><a href="puzzle.html">Veteran's History Project</a></li>
+                    <li><a href="private.html">Members Only</a></li>
+                    <li><a href="canvas.html">Prints and Photographs</a></li>
+                    <li><a href="animation.html">Historic Newspapers</a></li>
+                    <li><a href="page1.html">Legislative Information</a></li>
+                    <li><a href="page2.html">History &amp; Culture</a></li>
+                    <li><a href="xml.html">Other Resources</a></li>
+                    <li><a href="http://www.google.com">Google</a></li>
+                    <li><a href="http://www.amazon.com">Amazon</a></li>
+                </ul>
+            </nav>
+            <!-- insert side content below the menu here -->
+            <p>
+                <a href="http://wwww.loc.gov/webarchiving/">
+                    <img src="images/image.jpg" alt="Sample Image" width="157" height="117"
+                         style="border-color:#0696AB; border-image-width:10px;" />
+                </a>
+            </p>
+        </aside>
+        <!-- insert main content here -->
+        <section class="content">
+            <form id="form" action="mailto:985830@park.edu">
+                <label>First name:</label>
+                <input type="text" id="firstname" required maxlength="20" /><br />
+                <label>Last name:</label>
+                <input type="text" id="lastname" required maxlength="20" /><br />
+                <label>Street Address:</label>
+                <input type="text" id="streetaddress" required maxlength="20" /><br />
+                <label>City:</label>
+                <input type="text" id="city" required maxlength="20" /><br />
+                <label>State:</label>
+                <input type="text" id="state" required maxlength="20" /><br />
+                <label>Zip Code:</label>
+                <input type="number" id="zipcode" required maxlength="20" /><br />
+                <label>User Name:</label>
+                <input type="text" id="username" required maxlength="18" /><br />
+                <label>User password:</label>
+                <input type="password" id="psw" required maxlength="20" /><br />
+                <label>Email Address:</label>
+                <input type="text" id="emailaddress" required maxlength="20" /><br />
+                <label>Phone Number:</label>
+                <input type="text" id="phonenumber" required maxlength="20" /><br />
+                <label>Rating for the library web site:</label>
+                <input type="number" id="rating" /><br />
+                <label>How did you hear about this site?</label><br />
+                <select>
+                    <option value="internet">Internet</option>
+                    <option value="friend">Friend</option>
+                    <option value="other">Other</option>
+                </select>
+                <label>A list of authors:</label> <br />
+                <select>
+                    <option value="williamShakespeare">William Shakespeare</option>
+                    <option value="csLewis">CS Lewis</option>
+                    <option value="danBrown">Dan Brown</option>
+                </select> <br />
+                <label>Are you a student?</label><br><br>
+                <input type="radio" name="student" value="yes" checked />Yes<br />
+                <input type="radio" name="student" value="no" />No<br />
+                <label>Pick from several manuscripts:</label><br /><br />
+                <input type="checkbox" name="manuscripts" value="AaronCoplandCollection" /> Aaron Copland Collection <br />
+                <input type="checkbox" name="manuscripts" value="AlanLomaxCollection" /> Alan Lomax Collection <br />
+                <input type="checkbox" name="manuscripts" value="AndrewJacksonPapers" /> Andrew Jackson Papers <br />
+                <input type="checkbox" name="manuscripts" value="BronislavaNijinskaCollection" /> Bronislava Nijinska Collection <br />
+                <input type="checkbox" name="manuscripts" value="ClaraBartonPapers" /> Clara Barton Papers <br /><br />
+                <label>Enter Comments here:</label>
+                <textarea id="comments" rows="10" cols="75" maxlength="150"></textarea>
+            </form>
+            </section>
+            <input type="submit" id="submit" form="form" onclick="validateForm(this.form);" /><br>
+            <!--<div id="results" width="75%"></div>-->
+</div>
+    
+
+    <footer>
+        Created by Shelby Laquitara
+    </footer>
+</body>
+</html>

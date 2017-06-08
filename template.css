@@ -1,0 +1,87 @@
+﻿@charset "UTF-8";
+/*CSS DOCUMENT*/
+/* Shelby Laquitara 1/14/2016, template.css */
+body {
+    background-color:#042841;
+    color:#000;
+    font-family: Verdana,Arial,Arial,Helvetica,sans-serif;
+    font-size:12pt;
+}
+/* HEADER SECTION */
+header {
+    background-image:url(../images/banner.jpg);
+    background-color:#04AEC8;
+    background-size:960px 100px;
+    background-repeat:no-repeat;
+}
+.logo {
+
+}
+.topMenu {
+
+    color:#042841;
+    text-align:right;
+    font-size: 9pt;
+    font-family:Verdana, Geneva, sans-serif;
+}
+.topMenu a, a:visited {
+    text-decoration:none;
+    color:#141919;
+}
+.topMenu a:hover {
+    color:#cd2c31;
+}
+header h1 {
+    color:#FFF;
+    font-family:Papyrus;
+    text-outline:1px 0px #d8e6b3; /* CSS 3 style */
+    text-shadow: 4px -2px 4px #000000;
+}
+/* MAIN CONTENT SECTION - RIGHT */
+.content{
+}
+.content h2 {
+    color:#042841
+}
+.content, a:visited {
+    text-decoration:none;
+    color:#141919
+}
+.content a:hover {
+    color:#A69055;
+}
+
+/* MENU SELECTION - Bullet List LEFT */
+aside {
+    }
+aside nav ul{
+    background-color:#0C7EA5;
+    list-style:none;
+    text-decoration: none;
+}
+aside nav ul li{ /* line in the list*/
+    border-bottom: 1px solid #042841;
+}
+aside nav ul a, aside nav ul a:visited {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration:none;
+    color:#FFF;
+    text-shadow: 2px 2px 2px #042841;
+}
+/* mouseover */
+aside nav ul a:hover, aside nav ul a:active,
+    aside nav ul a:focus {
+    background: #FFF;
+    color: #042841;
+    text-decoration: none;
+    text-shadow:none;
+}
+aside p {
+    text-align:center;
+}
+/* FOOTER CONTENT SECTION */
+footer {
+    background-color:#0C7EA5;
+    text-align:center;
+    color: #FFF;
+}

@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- Created by: Shelby Laquitara , private.html -->
+<!-- Last Modified: 03/04/2016 -->
+<head>
+    <title>John Smith: Library of Congress</title>
+    <meta charset="utf-8" />
+    <meta name="keywords"
+          content="Library of Congress, John Smith" />
+    <meta name="description" content="My Sample Web Page" />
+    <link rel="stylesheet" type="text/css" href="styles/template.css">
+    <link rel="stylesheet" type="text/css" href="styles/templateLayout.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <script src="js/login.js"></script> <!--link login -->
+    <style type="text/css">
+        /* Put your CSS styles on the line below this comment */
+    </style>
+    <script>
+        // Put your JavaScript code on the line below this comment
+    </script>
+</head>
+<body onload="getCookie();">
+    <!-- insert header here -->
+    <header>
+        <!-- insert Top Menu here -->
+        <img class="logo" src="images/logo.png" alt="Logo" />
+        <nav class="topMenu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <h1>Library of Congress &amp; Other Government Resources</h1>
+    </header>
+    <div class="main">
+        <aside class="LeftAside">
+            <nav class="leftMenu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="feedback.html">Feedback Form</a></li>
+                    <li><a href="location.html">Location &amp; Google Map</a></li>
+                    <li><a href="multimedia.html">Performing Arts</a></li>
+                    <li><a href="puzzle.html">Veteran's History Project</a></li>
+                    <li><a href="private.html">Members Only</a></li>
+                    <li><a href="canvas.html">Prints and Photographs</a></li>
+                    <li><a href="animation.html">Historic Newspapers</a></li>
+                    <li><a href="page1.html">Legislative Information</a></li>
+                    <li><a href="page2.html">History &amp; Culture</a></li>
+                    <li><a href="xml.html">Other Resources</a></li>
+                    <li><a href="http://www.google.com">Google</a></li>
+                    <li><a href="http://www.amazon.com">Amazon</a></li>
+                </ul>
+            </nav>
+            <!-- insert side content below the menu here -->
+            <p>
+                <a href="http://wwww.loc.gov/webarchiving/">
+                    <img src="images/image.jpg" alt="Sample Image" width="157" height="117"
+                         style="border-color:#0696AB; border-image-width:10px;" />
+                </a>
+            </p>
+        </aside>
+        <!-- insert main content here -->
+        <section class="content">
+            <h2>This is the heading on the page</h2>
+            <p>
+                5 recommended books from the Gutenberg project:
+            </p>
+            <ol>
+                <!--adding an ordered list using the ol and li tags-->
+                <li>Pride and Prejudice by Jane Austen</li>
+                <li>Dracula by Bram Stoker</li>
+                <li>The Jungle by Upton Sinclair</li>
+                <li>Peter Pan by J. M. Barrie</li>
+                <li>Great Expectations by Charles Dickens</li>
+            </ol>
+        </section>
+        <div id="results"></div>
+    </div>
+    <footer>
+        Created by Shelby Laquitara
+    </footer>
+</body>
+</html>
+
+<!--15-->
+<!--Peter Parker-->
+    <H3>About Us</H3>
+    <div>
+        <p>
+            We are a large company located in <strong>Texas</strong>. <br />
+            You can email us at www.mycompany.com or call us at
+            <font color="green"> or call us at <i>999-222-0909</i></font>
+        </p>
+    </div>
+
+<!--16-->
+Create an inline style rule that formats the following paragraph to 
+use Times New Roman 14-point font, 
+that is colored using the hexadecimal value FF00CC and bold, 
+right-aligned, and a half times what the normal line height is, 
+and underlined.
+
+<p id ="inlineStyle" style="font-family:'Times New Roman';
+    font-size:14pt;
+    color: #FF00CC;
+    text-align:right;
+    height: 50px;
+    text-decoration: underline;
+    font-weight: bold;">A famous quote from Anatole France, 
+    "An education is not how much you have committed to memory, 
+    or even how much you know. It is being able to differentiate 
+    between what you do know and what you do not know." </p>
+
+
+<!--17
+    Compare inline style rules
+    embedded 
+    external style sheet rules. 
+    -->
+
+<!--18
+Modify the html code for the articles.html page. 
+Create the entire code to display this text properly. 
+The articles.html page and the loc.css style sheet, 
+are located in the root directory of the web site. 
+The images directory is located at the same level as the web pages and all 
+images are stored within the images directory.
+
+Create the complete code for the heading and body sections as you would any web page.
+
+In the body, insert your header and footer sections using html 5 tags
+
+In the header, insert the code to display the logo on the page
+The logo is stored in a subfolder called images in a file called logo.png.
+ The alternative text is "The Library of Congress Articles". The ID value for the 
+logo is logo.
+The logo is 180 by 100 pixels with no border and is linked to the home.html page, 
+which is located in the same directory as this articles.html page.
+
+In the footer, display your name as an email link.
+
+In the body of the page, insert a div tag with the id value as 'content'
+
+Inside the content area, insert the heading title of the page, using a heading 2 tag.
+ The heading of the page is "Articles on the Library of Congress Web Site:"
+
+Refer to the article headings and descriptions below
+
+Make two sections, one for each article.
+Provide a unique ID value for each section (section1, section2)
+Configure the class name for each section to be called locSections.
+
+Make the title for each section, a hyperlink.
+The links should all open in a new tab or window.
+The web address for title 1 is http://www.loc.gov/exhibits/flw/flw.html 
+(Links to an external site.)
+The web address for title 2 is http://www.loc.gov/exhibits/bobhope/
+ (Links to an external site.)
+
+Make each description for each section appear below the hyperlink title using
+ an article tag.
+Provide a unique ID value for each article (article1, article2)
+Provide a common class name for each article (named locArticles)
+
+
+Articles on the Library of Congress Web Site:
+
+Frank Lloyd Wright, 1930, 1937 (Links to an external site.)
+
+Architecture is the triumph of Human Imagination over materials,
+ methods, and men, to put man into possession of his own Earth. 
+It is at least the geometric pattern of things, of life, of the 
+human and social world. It is at best that magic framework of reality 
+that we sometimes touch upon when we use the word 'order.'
+
+Bob Hope (Links to an external site.)
+
+Throughout his extraordinary professional career of nearly seventy years, 
+Bob Hope practiced the arts he learned in vaudeville and perpetuated variety
+ entertainment traditions in stage musical comedy, motion pictures, radio, 
+television, and the live appearances he made around the world in support of 
+American armed forces. Today, the stage variety show is mostly a memory but 
+its influence is pervasive thanks to the long and rich careers of vaudeville
+ veterans like Bob Hope.-->
+
+<!DOCTYPE html>
+<html>
+<!-- Created by: Shelby Laquitara -->
+<head>
+    <title>John Smith: Library of Congress</title>
+    <meta charset="utf-8" />
+    <meta name="keywords"
+          content="Articles on the Library of Congress Web Site" />
+    <meta name="description" content="My Sample Web Page" />
+    <link rel="stylesheet" type="text/css" href="styles/template.css">
+    <link rel="stylesheet" type="text/css" href="styles/templateLayout.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <style type="text/css">
+        /* Put your CSS styles on the line below this comment */
+    </style>
+    <script>
+// Put your JavaScript code on the line below this comment
+    </script>
+</head>
+<body>
+    <div id="content">
+    <!-- insert header here -->
+    <header>
+        <!-- insert Top Menu here -->
+        <img class="logo" id="logo" src="images/logo.png" 
+             alt=""The Library of Congress Articles"" width="180" height="100" />
+        <nav class="topMenu">
+            <a href="home.html">Home</a>
+            <a href="articles.html">Articles</a>
+        </nav>
+        <h1>Library of Congress &amp; Other Government Resources</h1>
+    </header>
+    <div class="main">
+        <aside class="LeftAside">
+            <nav class="leftMenu">
+             
+            </nav>
+            <!-- insert side content below the menu here -->
+        </aside>
+        <!-- insert main content here -->
+        <section1 class="content">
+            <h2>This is the heading on the page</h2>
+           
+                <p>
+                    <a href="http://www.loc.gov/exhibits/flw/flw.html" alt="Frank Lloyd Wright">
+               <article1>Architecture is the triumph of Human Imagination over materials, 
+                        methods, and men, to put man into possession of his own Earth.
+                         It is at least the geometric pattern of things, of life, of the human
+                         and social world. It is at best that magic framework of reality 
+                        that we sometimes touch upon when we use the word 'order.'
+               </article1>
+                </a>
+            </p>
+            </section1>
+            <section2>
+                <a href="http://www.loc.gov/exhibits/bobhope/"alt="Bob Hope">
+                  <article2>Throughout his extraordinary professional career of nearly
+                     seventy years, Bob Hope practiced the arts he learned in vaudeville
+                     and perpetuated variety entertainment traditions in stage musical
+                     comedy, motion pictures, radio, television, and the live 
+                    appearances he made around the world in support of American 
+                    armed forces. Today, the stage variety show is mostly a memory 
+                    but its influence is pervasive thanks to the long and rich 
+                    careers of vaudeville veterans like Bob Hope.
+              </article2>
+                </a>
+            </section2>
+            <br class="brClear" />
+    </div>
+</div>
+    <footer>
+        <a href="mailto:985830@park.edu">Send e-mail to Shelby Laquitara</a>
+    </footer>
+</body>
+</html>
+
+
+<!--19
+Write the code for the loc.css external style sheet. 
+Make sure to provide proper nesting, syntax, and good programming practices 
+as discussed in class, lecture and in the book! Be careful as on the web 
+page there are other articles, images, sections and headings!
+
+Write your full name in a comment on the first line.
+
+Configure the entire web page body, with Arial font that 10 points.
+
+Configure only the logo image using it's id attribute, to have a blue 2-pixel
+ sized border and floats to the right of the text.
+
+Configure all of heading 2 tags in the page, using the heading 2 selector, 
+as center-aligned, bold and the hexadecimal value for the
+color for green.
+
+Configure the ConstSections class with the Verdana font and bold.
+
+Configure the color of all hyperlinks and previously visited links, 
+that are only within the amendment articles, to be FF0000, and bold with
+no underlining.
+
+Configure the color of all hyperlinks when you place the mouse cursor 
+over the hyperlinks to change to 22CC55 with underlining. 
+But only the hyperlinks in the title within the sections. -->
+
+//Shelby V. Laquitara
+    body {
+    font-family: Arial;
+    font-size:10pt;
+}
+
+    .logo {
+    id=
+    color: #blue;
+    border-size: 2pt;
+    float: right;
+}
+
+
+
+
+<!--20
+* For this activity only provide the code that is described below. 
+You do not need to provide the other parts of the page, such as the head section,
+ doctype or html tags.
+
+Create a feedback form for your web site.
+ You must use HTML 5 and  HTML 5 validation for this question.
+
+Make sure to specify the form element with the action, method, id, name configured 
+as myForm. You should not send the form values in the query string with the url, 
+rather send it attached to the request. (Hint: look up methods and action!)
+Configure the form element so that nothing will happen when the submit function 
+is called (Hint: void)
+Requirements:
+
+The form should contain text fields and use labels. Make sure you identify which 
+label works with which field!
+The id and name attributes should be firstname, lastname, email, phone, 
+topic, and feedback.
+Make sure you indicate to the user which fields are required such as
+ using an asterisk and an instruction to the user.
+The user is required to enter a value for each field except comments.
+The email address should be formatted as a valid email address
+The phone number (USA format) as a valid phone number.
+Use a regular expression with the pattern attribute for the following fields:
+ email and phone.
+The form should contain a field that allows the user to choose from a list of options. 
+The user is required to make a selection.
+
+What is your favorite topic on our web site?
+
+Arts
+Music
+Media
+History
+Other
+The form should contain a multi-line text box which allows the user to enter in
+ multiple lines of text. The user is not required to enter a value.
+
+There should be a submit and a reset button. When you press reset the form values
+ should be reset to the default value. If you press submit, the form is submitted.
+ When a person submits the form by clicking on the submit button, a javascript function 
+called processFormData() is called.
+
+After the form, insert a paragraph with the id set to results, which will be used 
+to display the values when the form is processed. 3-->
+<div>
+<section class="content">
+    <form id="myForm" action="void">
+        <label>First name:</label>
+        <input type="text" id="firstname" required maxlength="20" /><br />
+        <label>Last name:</label>
+        <input type="text" id="lastname" required maxlength="20" /><br />
+        <label>Email Address:</label>
+        <input type="text" id="emailaddress" required maxlength="20" /><br />
+        <label>Phone Number:</label>
+        <input type="text" id="phonenumber" required maxlength="20" /><br />
+        <label>What is your favorite topic on our website?:</label><br /><br />
+        <input type="checkbox" name="topics" value="Arts" /> Arts <br />
+        <input type="checkbox" name="topics" value="Music" /> Music <br />
+        <input type="checkbox" name="topics" value="Media" /> Media <br />
+        <input type="checkbox" name="topics" value="History" /> History <br />
+        <input type="checkbox" name="topics" value="Other" /> Other <br /><br />
+        <label>Enter feedback here:</label>
+        <textarea id="feedback" rows="10" cols="75" maxlength="150"></textarea>
+    </form>
+</section>
+<input type="submit" id="submit" form="form" onclick="processFormData()(this.form);" /><br />
+<input type="reset" id="reset" form="form "value="Reset!"/> <br />
+<div id="results" width="75%"></div>
+</div>
+
+<!--21
+Using the feedback form you provided, display the data using JavaScript.
+ You should have a paragraph which is set the id to results for that paragraph.
+Show the form results in that results paragraph!
+
+Write the JavaScript that does the following:
+
+Make sure the fields are not empty!
+Retrieve the values from each of the form fields and store them in a variable 
+called results.
+Make sure the results are formatted nicely with name of the field and values 
+each on a separate line, as shown:
+First Name:  George
+Last Name:   Gunderson
+Email: George@me.com
+Phone: 999-999-9999
+Topic: History
+Feedback: Great site!
+-->
+function processFormData(form) {
+    var results = "";
+    var fieldsFilled = true;
+    var  firstname= form.elements["firstname"].value;
+    if (firstname == null || firstname == "") {
+        results += "First name must be filled out\n";
+        fieldsFilled = fieldsFilled && false;
+    }
+    if (!isNaN(firstname)) {
+        results += "First name must be text only\n";
+        fieldsFilled = fieldsFilled && false;
+    }
+    var lastname = form.elements["lastname"].value;
+    if (lastname == null || lastname == "") {
+        results += "Last name must be filled out\n";
+        fieldsFilled = fieldsFilled && false;
+    }
+    if (!isNaN(lastname)){
+        results += "Last name must be text only\n";//go back and change all the x to the names and add the if !isNaN
+        fieldsFilled = fieldsFilled && false;
+    }
+    var email = form.elements["emailaddress"].value;
+    var exp = /\S+@\S+\.\S+/;
+    if (email == null || email == "") {
+        results += "Email Address must be filled out\n";
+        fieldsFilled = fieldsFilled && false;
+    }
+    if (!isNaN(email)) {
+        results += "Email Address must be text only\n";
+        fieldsFilled = fieldsFilled && false;
+    }
+    if (!exp.test(email)) {
+        results += "email is invalid\n";
+        fieldsFilled = fieldsFilled && false;
+    }
+    var x = form.elements["phonenumber"].value;
+    if (x == null || x == "") {
+        results += "Phone Number must be filled out\n";
+        fieldsFilled = fieldsFilled && false;
+    }
+    if (!isNaN(phonenumber)) {
+        results += "Phone Number must be text only\n";
+        fieldsFilled = fieldsFilled && false;
+    }
+    var checkBoxes = form.elements["topics"];
+    var selected = false;
+    for (var i = 0; i < checkBoxes.length; i++)
+    {
+        if (checkBoxes[i].checked)
+        {
+            selected = true;
+        }
+    }
+    if (selected == false)
+    {
+        results += "Choose atleast one topic\n";
+        fieldsFilled = fieldsFilled && false;
+    }
+    var x = form.elements["feedback"].value;
+    if (x == null || x == ""){
+        results += "feedback must be filled out";
+        fieldsFilled = fieldsFilled && false;
+    }
+    if (!isNaN(feedback)) {
+        results += "feedback must be text only\n";
+        fieldsFilled = fieldsFilled && false;
+    }
+    if (fieldsFilled == false) {
+        alert(results);
+    }
+    var finalMessage = document.getElementById("results");
+    if (results != "") {
+        finalMessage.innerHTML = results;
+    }
+
+}

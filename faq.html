@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- Created by: Shelby Laquitara , faq.html -->
+<!-- Last Modified: 3/6/2016 -->
+<head>
+    <title>FAQ</title>
+    <meta charset="utf-8" />
+    <meta name="keywords"
+          content="Library of Congress, Shelby Laquitara" />
+    <meta name="description" content="My Sample Web Page" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+    <style>
+        #accordion * {font-family: "Times New Roman", serif;
+                      color: darkgreen;
+        }
+    </style>
+</head>
+<body onload="drawBuilding();">
+    <!--drawCanvas is a function-->
+    <!-- insert header here -->
+    <header>
+        <!-- insert Top Menu here -->
+        <img class="logo" src="images/logo.png" alt="Logo" />
+        <nav class="topMenu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <h1>Library of Congress &amp; Other Government Resources</h1>
+    </header>
+
+    <!-- insert Horizontal Menu here -->
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand & toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                        data-toggle="collapse" data-target="#defaultNavbar1">
+                    <br />
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="home.html">Home</a>
+            </div>
+
+            <!-- The nav links, forms, & other content for toggling -->
+            <div class="collapse navbar-collapse" id="defaultNavbar1">
+
+                <!-- First Drop Down -->
+                <ul class="nav navbar-nav">
+
+                    <!-- Old code <li class="active"><br>
+            <a href="about.html"><br>About<span
+            class="sr-only"> (current) </span></a></li> -->
+
+                    <li class="dropdown">
+                        <a href="about.html" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button"
+                           aria-expanded="false">About<span class="caret"></span></a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="location.html">Location</a></li>
+                            <li>
+                                <a href="http://www.loc.gov/" target="_blank">
+                                    Library of Congress
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Second Drop Down -->
+                    <!-- Second Drop Down -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button" aria-expanded="false">
+                            Resources <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="multimedia.html">Performing Arts</a></li>
+                            <li><a href="puzzle.html">Veteran's History Project</a></li>
+                            <li><a href="private.html">Members Only</a></li>
+                            <!-- Line Dividers -->
+                            <li class="divider"></li>
+                            <li><a href="page1.html">Legislative Information</a></li>
+                            <li><a href="page2.html">History &amp; Culture</a></li>
+                            <li><a href="canvas.html">Prints and Photographs</a></li>
+                            <li><a href="animation.html">Historic Newspaper</a></li>
+                            <li class="divider"></li>
+                            <li><a href="xml.html">Performing Arts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Right Menu -->
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- OLD <li><a href="http://www.google.com/">Google</a></li> -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button" aria-expanded="false">
+                            LOC <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="http://www.loc.gov/photos/collections/">Prints and Photographs</a></li>
+                        </ul>
+                        <!-- Third Drop Down -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false">Learn More<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="https://www.archive.org/details/library_of_congress">Archive.org</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.en.wikipedia.org/wiki/Library_of_Congress">Wikipedia LOC </a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Search Tools -->
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Search!</button>
+                </form>
+
+            </div> <!-- end navbar-collapse-->
+        </div> <!-- end container-fluid -->
+    </nav>
+
+    <!-- End Main Menu -->
+    <!-- insert left side here -->
+    <div class="main">
+        <aside class="LeftAside">
+            <!-- insert side content here -->
+            <p>
+                <a href="http://www.loc.gov/webarchiving/">
+                    <img src="images/image.jpg" alt="Sample Image" width="157" height="117"
+                         style="border-color:#0696AB; border-image-width:10px;" />
+                </a>
+            </p>
+        </aside>
+
+        <!-- insert main content here -->
+        <section class="content">
+            <div id="accordion">
+                <h3>Section 1: The library contains rare books and manuscripts</h3>
+                <div>
+                    <p>
+                        The Library of congress contains thousands of rare books and manuscripts
+                        for you to explore. They have small and large books. They have examples of
+                        old style printing. They also have amazing sections such as the
+                         Gutenberg Bible and Presidential Papers. 
+                    </p>
+                </div>
+                <h3>Section 2: Does the Library offer books for the blind? </h3>
+                <div>
+                    <p>
+                        The answer is yes the library does offer books for the blind! 
+                        They offer a wide selection of sound recordings, as well as 
+                        braille books. This makes it easy and accessible for the blind 
+                        to read the books in the library. 
+                    </p>
+                </div>
+                <h3>Section 3: Does the Library have comic books? </h3>
+                <div>
+                    <p>
+                        Yes! The Library actually has the record for the world's 
+                        largest collection of comic books! Isn't that cool? Here is a list 
+                        of a few comic books you can find at the Library. 
+                    </p>
+                    <ul>
+                        <li>Superman</li>
+                        <li>Zap</li>
+                        <li>Detective Comics</li>
+                    </ul>
+                </div>
+                <h3>Section 4: The library of Congress is the largest Library in the 
+                United States!</h3>
+                <div>
+                    <p>
+                        It has millions of items including books, newspapers, 
+                        comic books, audio, braille, maps, manuscripts, music and much more. 
+                        There is something for everyone!
+                    </p>
+                </div>
+                <h3>Section 5: Has the library ever been vandalized?</h3>
+                <div>
+                    <p>
+                        Yes, unfortunately the library was destroyed when British
+                         troops razed the building it was housed in, 
+                        stealing many books and destroying many others.
+                    </p>
+                    <p>
+                        Although this tradegy occured,  Thomas Jefferson donated his
+                         own collection of more than 6,000 books to the congress for the
+                         purpose of restoring the library. He was compensated nearly 
+                        24,000 dollars for this donation.
+                    </p>
+                </div>
+                </div>
+                
+        </section>
+        <br class="brClear" />
+    </div>
+
+    <!-- insert footer here -->
+    <footer>
+        Created by Shelby Laquitara
+    </footer>
+</body>
+</html>

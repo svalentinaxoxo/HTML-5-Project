@@ -1,0 +1,90 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+/* Shelby Laquitara, 1/14/2016, templatelayout.css */
+body {
+    /* centers the page content */
+    margin: 0px auto;
+}
+/* HEADER SECTION */
+header {
+    width:960px;
+    height:100px;
+    margin: 0px auto;
+    padding: 0px;
+    z-index: 100;
+}
+.logo{
+    width:180px;
+    height:100px;
+    float:left;
+}
+.topMenu {
+    padding-right: 80px;
+    padding-top: 10px;
+}
+header h1 {
+    text-align:center;
+    padding-right: 0px;
+}
+/* MIDDLE PAGE ROW */
+.main {
+    width:960px;
+    padding: 0px 0px;
+    margin: 0px auto;
+}
+/* MAIN CONTENT SECTION - RIGHT */
+.content {
+    width:780px;
+    padding: 0px 10px;
+    display:table-cell;
+    vertical-align:top;
+}
+/* MENU SECTION - LEFT SIDE */
+aside { /* the whole section */
+    width: 180px;
+    margin: 0px auto;
+    vertical-align: top;
+    padding: 0px 0px;
+    display: table-cell;
+    margin-bottom: 15px;
+}
+aside nav ul { /* this is the menu */
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 15px;
+}
+aside nav ul li { /* line in list */
+    border-bottom: 1px solid #666;
+}
+aside nav ul a, nav ul a:visited {
+    /* the individual links */
+    padding: 5px 5px 5px 15px;
+    display: block;
+    width: 160px;
+}
+aside p {
+    padding: 0px 0px;
+}
+/* FOOTER CONTENT SECTION */
+footer {
+    width:960px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    clear: both;
+}
+/* GENERIC CLASSES */
+.fltrt {
+    float: right;
+    margin-left: 8px;
+}
+.fltlft {
+    float: right;
+    margin-left: 8px;
+}
+.borderon {
+    border-width:5px;
+    border-color:#000000;
+}
+brClear {
+    clear:both;
+}
